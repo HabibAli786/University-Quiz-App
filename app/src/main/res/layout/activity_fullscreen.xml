@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#1476c6"
+    android:paddingTop="16dp"
+    tools:context=".mainScreenActivity">
+
+    <Button
+        android:id="@+id/play_game_btn"
+        android:layout_width="156dp"
+        android:layout_height="54dp"
+        android:layout_above="@+id/instructions_btn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginRight="124dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_rounded"
+        android:text="Play Game" />
+
+    <Button
+        android:id="@+id/instructions_btn"
+        android:layout_width="156dp"
+        android:layout_height="54dp"
+        android:layout_above="@+id/leaderboard_btn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginRight="124dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="instructionAct"
+        android:background="@drawable/btn_rounded"
+        android:text="Instructions" />
+
+    <Button
+        android:id="@+id/leaderboard_btn"
+        android:layout_width="156dp"
+        android:layout_height="54dp"
+        android:layout_above="@+id/exit_btn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginRight="124dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_rounded"
+        android:onClick="leaderboardAct"
+        android:text="Leaderboard" />
+
+    <Button
+        android:id="@+id/exit_btn"
+        android:layout_width="156dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginRight="124dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/btn_rounded"
+        android:text="Exit Game" />
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/play_game_btn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
+        android:layout_marginBottom="31dp"
+        app:srcCompat="@drawable/quiz_app" />
+
+</RelativeLayout>

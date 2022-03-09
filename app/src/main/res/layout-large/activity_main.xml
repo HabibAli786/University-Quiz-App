@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#1476c6"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="371dp"
+        android:layout_height="277dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginRight="115dp"
+        app:srcCompat="@drawable/quiz_app" />
+
+    <Button
+        android:id="@+id/play_game_btn"
+        android:layout_width="223dp"
+        android:layout_height="81dp"
+        android:layout_below="@+id/appLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn_rounded"
+        android:text="Play Game"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/instructions_btn"
+        android:layout_width="223dp"
+        android:layout_height="81dp"
+        android:layout_below="@+id/play_game_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:background="@drawable/btn_rounded"
+        android:onClick="instructionAct"
+        android:text="Instructions"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/leaderboard_btn"
+        android:layout_width="223dp"
+        android:layout_height="81dp"
+        android:layout_below="@+id/instructions_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="186dp"
+        android:layout_marginRight="186dp"
+        android:background="@drawable/btn_rounded"
+        android:onClick="leaderboardAct"
+        android:text="Leaderboard"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/exit_btn"
+        android:layout_width="223dp"
+        android:layout_height="81dp"
+        android:layout_below="@+id/leaderboard_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginRight="185dp"
+        android:background="@drawable/btn_rounded"
+        android:text="Exit Game"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/highScoreTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginBottom="36dp"
+        android:text="High Score: 0"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+</RelativeLayout>

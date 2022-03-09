@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#1476c6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/loginTxt"
+        android:layout_width="380dp"
+        android:layout_height="83dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="566dp"
+        android:layout_marginRight="566dp"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usernameLoginTxt"
+        android:layout_width="380dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/loginTxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="559dp"
+        android:layout_marginRight="559dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/passwordLoginTxt"
+        android:layout_width="380dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/usernameLoginTxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="559dp"
+        android:layout_marginRight="559dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="376dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/passwordLoginTxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="561dp"
+        android:layout_marginRight="561dp"
+        android:background="@drawable/btn_rounded"
+        android:text="Login"
+        android:textSize="24sp" />
+
+    <!--  Google log in  -->
+
+    <Button
+        android:id="@+id/googleSignIn"
+        android:layout_width="376dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/loginBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="558dp"
+        android:layout_marginRight="558dp"
+        android:layout_marginBottom="54dp"
+        android:background="@drawable/btn_rounded"
+        android:text="Google LogIn"
+        android:textSize="24sp" />
+
+</RelativeLayout>

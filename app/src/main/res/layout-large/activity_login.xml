@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#1476c6"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/loginTxt"
+        android:layout_width="380dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usernameLoginTxt"
+        android:layout_width="380dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/loginTxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginRight="206dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/passwordLoginTxt"
+        android:layout_width="380dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/usernameLoginTxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="204dp"
+        android:layout_marginRight="204dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="376dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/passwordLoginTxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginRight="206dp"
+        android:background="@drawable/btn_rounded"
+        android:text="Login"
+        android:textSize="24sp" />
+
+    <!--  Google log in  -->
+
+    <Button
+        android:id="@+id/googleSignIn"
+        android:layout_width="376dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/loginBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="205dp"
+        android:layout_marginRight="205dp"
+        android:background="@drawable/btn_rounded"
+        android:text="Google LogIn"
+        android:textSize="24sp" />
+
+</RelativeLayout>

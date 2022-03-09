@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#1476c6"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="31dp"
+        app:srcCompat="@drawable/quiz_app" />
+
+    <Button
+        android:id="@+id/play_game_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@+id/appLogo"
+        android:layout_toRightOf="@+id/appLogo"
+        android:background="@drawable/btn_rounded"
+        android:text="Play Game"
+        android:textSize="8sp" />
+
+    <Button
+        android:id="@+id/instructions_btn"
+        android:layout_width="88dp"
+        android:layout_height="14dp"
+        android:layout_below="@+id/play_game_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toEndOf="@+id/appLogo"
+        android:layout_toRightOf="@+id/appLogo"
+        android:background="@drawable/btn_rounded"
+        android:onClick="instructionAct"
+        android:text="Instructions"
+        android:textSize="8sp" />
+
+    <Button
+        android:id="@+id/leaderboard_btn"
+        android:layout_width="88dp"
+        android:layout_height="14dp"
+        android:layout_below="@+id/instructions_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="7dp"
+        android:layout_toEndOf="@+id/appLogo"
+        android:layout_toRightOf="@+id/appLogo"
+        android:background="@drawable/btn_rounded"
+        android:onClick="leaderboardAct"
+        android:text="Leaderboard"
+        android:textSize="8sp" />
+
+    <Button
+        android:id="@+id/exit_btn"
+        android:layout_width="88dp"
+        android:layout_height="14dp"
+        android:layout_below="@+id/leaderboard_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_toEndOf="@+id/appLogo"
+        android:layout_toRightOf="@+id/appLogo"
+        android:background="@drawable/btn_rounded"
+        android:text="Exit Game"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/highScoreTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="16dp"
+        android:text="High Score: 0"
+        android:textColor="@android:color/white"
+        android:textSize="8sp" />
+
+</RelativeLayout>
